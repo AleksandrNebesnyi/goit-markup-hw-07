@@ -1,0 +1,63 @@
+.hero {
+  max-width: 1600px;
+  min-height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: $hero-bg-color;
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url("../images/fotohero.jpg");
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.hero__title {
+  display: block;
+
+  width: 696px;
+  margin: 0 auto;
+
+  padding-top: 200px;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.4;
+  letter-spacing: 0.06em;
+
+  color: $wite-color;
+}
+
+%button {
+  display: block;
+  margin: 0 auto;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.9;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+  border-radius: 4px;
+  padding: 10px 35px;
+  border: 1px solid transparent;
+
+  color: $primery-bg-color;
+  background-color: $accent-color;
+  transition: background-color $time $cubic, box-shadow $time $cubic;
+}
+.hero__button {
+  @extend %button;
+}
+.hero__button:first-letter {
+  text-transform: uppercase;
+}
+.hero__button:hover,
+.hero__button:focus {
+  background-color: $button-bg-hover-color;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
