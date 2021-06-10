@@ -36,6 +36,8 @@
 .hero__button {
   @extend %button-primery;
 
+  transition:background-color $time $cubic, box-shadow $time $cubic;
+
   &:hover,
   &:focus {
     background-color: $button-bg-hover-color;

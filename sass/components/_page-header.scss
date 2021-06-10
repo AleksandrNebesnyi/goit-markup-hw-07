@@ -4,8 +4,9 @@
   border-bottom: 1px solid var(--header-border-color);
 }
 
-.logo {
+.header__logo{
   @extend %logo;
+  padding: 23px 0;
 }
 
 .logo__part--first {
