@@ -5,15 +5,10 @@
 }
 
 .logo {
-  color: $secondary-text-color;
-  font-family: Raleway, sans-serif;
-  font-size: 26px;
-  line-height: 1.2;
-  text-decoration: none;
-  padding: 23px 0;
+  @extend %logo;
 }
 
-.logo__part-first {
+.logo__part--first {
   color: $accent-color;
 }
 
@@ -25,8 +20,8 @@
   align-items: center;
 }
 .main-nav {
-  padding: 0;
   align-items: center;
+  padding: 0;
 }
 .nav__list {
   margin-left: 93px;
@@ -37,20 +32,19 @@
 }
 
 .nav__link {
+  position: relative;
   display: block;
+
   padding-top: 32px;
   padding-bottom: 32px;
-  color: $secondary-text-color;
-
+  
   font-weight: 500;
   font-size: 14px;
   line-height: 1.1;
   letter-spacing: 0.02em;
   text-decoration: none;
+  color: $secondary-text-color;
   transition: color $time $cubic;
-}
-.nav__link {
-  position: relative;
 }
 
 .nav__item--current::after {
@@ -75,11 +69,14 @@
 
 .nav-information {
   margin-left: auto;
+
+  &__icon {
+      fill: currentColor;
+  margin-right: 10px;
+  }
+
 }
 
-.nav-information__list:last-child {
-  margin-left: 50px;
-}
 
 .nav-information__link {
   color: inherit;
@@ -88,7 +85,6 @@
   padding-bottom: 32px;
 
   font-weight: 500;
-  font-size: 14px;
   line-height: 1.1;
   letter-spacing: 0.02em;
   text-decoration: none;
@@ -99,14 +95,12 @@
   align-items: center;
   color: $primery-text-color;
   transition: color $time $cubic;
-}
 
-.nav-information__list:hover,
-.nav-information__list:focus {
-  color: $accent-color;
+  &:hover,
+  &focus{
+    color: $accent-color;
+  }
+  &:last-child {
+  margin-left: 50px;
 }
-
-.nav-information__icon {
-  fill: currentColor;
-  margin-right: 10px;
 }
