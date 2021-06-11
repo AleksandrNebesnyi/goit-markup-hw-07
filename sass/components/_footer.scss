@@ -1,6 +1,7 @@
 
 // Футер
 
+
 .footer {
   background-color:$footer-bg;
   &__container {
@@ -9,6 +10,11 @@
   padding: 0;
 }
 }
+.footer__container {
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
 .footer__adress {
   padding-top: 60px;
   padding-bottom: 60px;
@@ -16,6 +22,7 @@
 }
 
 .footer__logo {
+  display:block;
   @extend %logo;
   margin-bottom: 20px;
 
@@ -27,34 +34,34 @@
   }
 }
 
-.footer-list a {
-  transition: color $time  $cubic;
-}
-
 .footer-list__email, 
 .footer-list__tel {
-   color: $wite-color;
-   line-height: 1.7;
- }
+   color: rgba(255, 255, 255, 0.6);
+   line-height: 1.71;
+   transition: color $time  $cubic;
+    }
+.footer-list__email--color,
+.footer-list__tel--color{
+  color: inherit;
+}
 
-
-// .footer-list li {
-//   color: var(--wite-color);
-//   line-height: 1.7;
-// }
-.footer-list li:not(:last-child) {
+.footer-list__address {
   margin-bottom: 9px;
+
+  line-height: 1.71;
+  color: $wite-color;
 }
 
-.footer-list a:hover,
-.footer-list a:focus {
-  color: var(--accent-color);
+.footer-list__email {
+  margin-bottom: 9px;
+  &:hover{
+  color:$accent-color;
+}
 }
 
-.footer-email,
-.footer-tel {
-  line-height: 1.7;
-  color: rgba(255, 255, 255, 0.6);
+.footer-list__tel:hover,
+.footer-list__tel:focus {
+  color:$accent-color;
 }
 
 .footer-link__title {
@@ -84,7 +91,7 @@
   margin-right: 10px;
 }
 
-.footer-link__icon{
+.footer-link__icon {
   display: block;
   padding: 12px;
   border: none;
