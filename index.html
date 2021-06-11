@@ -15,6 +15,7 @@
 </head>
 
 <body>
+    <!-- Шапка сайта -->
     <header class="header">
         <div class="container main-nav">
     
@@ -438,51 +439,51 @@
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
             <form class="form" >
-                <h2 class="form-title">Оставьте свои данные, мы вам перезвоним</h2>
+                <h2 class="form__title">Оставьте свои данные, мы вам перезвоним</h2>
 
-                <label class="form-field" >
-                <input type="text"  class="form-input" name="user-name"  autofocus required>
-                <span class="form-label">Имя</span>
-                <svg class="modal-icon">
+                <label class="form__field" >
+                <input type="text"  class="form__input" name="user-name"  autofocus required>
+                <span class="form__label">Имя</span>
+                <svg class="form__icon">
                     <use href="./images/sprite.svg#icon-person-form"></use>
                 </svg>
                 </label>
                
-                <label class="form-field">
-                    <input type="tel" class="form-input" name="phone-number" autofocus required>
-                    <span class="form-label">Телефон</span>
-                    <svg class="modal-icon">
+                <label class="form__field">
+                    <input type="tel" class="form__input" name="phone-number" autofocus required>
+                    <span class="form__label">Телефон</span>
+                    <svg class="form__icon">
                         <use href="./images/sprite.svg#icon-phone-form"></use>
                     </svg>
                 </label>
 
-                <label class="form-field">
-                    <input type="mail" class="form-input" name="mail" autofocus required>
-                    <span class="form-label">Почта</span>
-                    <svg class="modal-icon">
+                <label class="form__field">
+                    <input type="mail" class="form__input" name="mail" autofocus required>
+                    <span class="form__label">Почта</span>
+                    <svg class="form__icon">
                     <use href="./images/sprite.svg#icon-email-form"></use>
                     </svg>
                 </label>
  
 
-                <label class="form-field">
-                    <textarea class="comment" name="comment"  rows="8" placeholder="Введите тест"></textarea>
-                    <span class="textarea-comment">Оставьте коментарий</span>
+                <label class="form__field">
+                    <textarea class="textarea" name="comment"  rows="8" placeholder="Введите тест"></textarea>
+                    <span class="textarea__comment">Оставьте коментарий</span>
                 </label>
                                
                     <label class="policy">
-                        <input class="checkbox" type="checkbox" name="policy" value="check" />
-                        <span class="icon"></span>
-                        <span class="label">Соглашаюсь с рассылкой и принимаю
-                        <a href=""> Условия договора</a></span>
+                        <input class="policy__checkbox" type="checkbox" name="policy" value="check" />
+                        <span class="policy__icon"></span>
+                        <span class="policy__label">Соглашаюсь с рассылкой и принимаю
+                        <a class="policy__link" href=""> Условия договора</a></span>
                     </label>
                 
                                               
-                <button type="submit" class="form-modal-button">Отправить</button>
+                <button type="submit" class="form__button">Отправить</button>
 
 
             </form>
-            <button data-modal-close type="button" class="modal-button">
+            <button data-modal-close type="button" class="modal__button">
                 <svg class="" width="18" height="18">
                     <use href="./images/sprite.svg#icon-close-form"></use>
                 </svg>

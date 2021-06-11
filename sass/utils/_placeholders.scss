@@ -23,3 +23,19 @@
   line-height: 1.2;
   text-decoration: none;
   }
+
+%portfolio__button {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  cursor: pointer;
+  border-radius: 4px;
+  padding: 6px 22px;
+  border: 1px solid transparent;
+  min-width: 73px;
+  color:$secondary-text-color;
+  background-color:$primery-bg-color;
+  transition: color $time $cubic,
+    background-color $time $cubic,
+    box-shadow $time $cubic;
+  }
