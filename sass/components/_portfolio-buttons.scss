@@ -1,28 +1,50 @@
+// Кнопки портфолио
 
-// Кнопки портфолио 
-
-.portfolio__title{
-    @extend %visually_hidden;
-  
+.portfolio__title {
+  @extend %visually_hidden;
 }
-.portfolio__button-list {
+.button-list {
   display: flex;
   justify-content: center;
   margin-bottom: 50px;
 }
 
-.portfolio__button {
+.button-list__button {
   @extend %portfolio__button;
+}
 
-    &:hover,
-    &:focus {
-  color:$primery-bg-color;
-  background-color:$ccent-color;
+.button-list__item:hover {
+  color: $primery-bg-color;
+  background-color: $accent-color;
   box-shadow: 0 2px 2px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.08),
     0 3px 1px rgba(0, 0, 0, 0.1);
 }
-}
-.portfolio__button:not(:last-child) {
+
+// color: $secondary-text-color;
+// background-color: $primery-bg-color;
+
+// font-weight: 500;
+// font-size: 16px;
+// line-height: 1.6;
+// cursor: pointer;
+// border-radius: 4px;
+// padding: 6px 22px;
+// border: 1px solid transparent;
+// min-width: 73px;
+// transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+//   background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+//   box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+// @extend %portfolio__button;
+
+// &:hover,
+// &:focus {
+//   color: $primery-bg-color;
+//   background-color: $ccent-color;
+//   box-shadow: 0 2px 2px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.08),
+//     0 3px 1px rgba(0, 0, 0, 0.1);
+
+.button-list__item:not(:last-child) {
   margin-right: 8px;
 }
 
