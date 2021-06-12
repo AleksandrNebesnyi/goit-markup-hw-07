@@ -1,18 +1,17 @@
 // Наша команда
 
 .team {
-  background-color:$primery-bg-color;
+  background-color: $primery-bg-color;
   &__title {
-  
-  margin-top: 0px;
-  margin-bottom: 50px;
+    margin-top: 0px;
+    margin-bottom: 50px;
 
-  font-size:$size-h2;
-  line-height: 1.2;
-  text-align: center;
+    font-size: $size-h2;
+    line-height: 1.2;
+    text-align: center;
 
-  color: $secondary-text-color;
-}
+    color: $secondary-text-color;
+  }
 }
 
 .team-list {
@@ -25,11 +24,11 @@
 
   padding: 0px;
 
-   &:not(:last-child) {
-  margin-right: 30px;
-}
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
 
-  background-color:$wite-color;
+  background-color: $wite-color;
   box-shadow: 0 2px 1px rgba(0, 0, 0, 0.2), 0 1px 1px rgba(0, 0, 0, 0.14),
     0 1px 3px rgba(0, 0, 0, 0.12);
 }
@@ -40,7 +39,7 @@
   margin-top: 30px;
   margin-bottom: 10px;
   font-weight: 500;
-  font-size:$size-h3;
+  font-size: $size-h3;
   line-height: 1.2;
 
   color: $secondary-text-color;
@@ -52,34 +51,30 @@
   margin-top: 0px;
   margin-bottom: 16 px;
 
-  font-size:$size-h3;
+  font-size: $size-h3;
   line-height: 1.2;
 }
 
 .team-list__icon-block {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include centeredFlex;
   margin-bottom: 30px;
 }
 
 .team-list__icon {
- display: inline-block;
+  display: inline-block;
 
   padding: 12px;
-  fill:$team-icon-color;
+  fill: $team-icon-color;
   border-radius: 50%;
-  transition: background-color $time  $cubic, fill $time $cubic;
+  transition: background-color $time $cubic, fill $time $cubic;
 
   &:not(:last-child) {
     margin-right: 10px;
-}
+  }
 
-&:hover,
-&:focus
- {
-  background-color:$accent-color;
-  fill:$wite-color;
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+    fill: $wite-color;
+  }
 }
-}
-

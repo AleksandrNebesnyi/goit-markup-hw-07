@@ -1,14 +1,12 @@
-
 // Футер
 
-
 .footer {
-  background-color:$footer-bg;
+  background-color: $footer-bg;
   &__container {
-  display: flex;
-  align-items: baseline;
-  padding: 0;
-}
+    display: flex;
+    align-items: baseline;
+    padding: 0;
+  }
 }
 .footer__container {
   margin: 0 auto;
@@ -22,26 +20,26 @@
 }
 
 .footer__logo {
-  display:block;
+  display: block;
   @extend %logo;
   margin-bottom: 20px;
 
-  &--part-first{
+  &--part-first {
     color: $accent-color;
   }
-  &--part-two{
+  &--part-two {
     color: $wite-color;
   }
 }
 
-.footer-list__email, 
+.footer-list__email,
 .footer-list__tel {
-   color: rgba(255, 255, 255, 0.6);
-   line-height: 1.71;
-   transition: color $time  $cubic;
-    }
+  color: rgba(255, 255, 255, 0.6);
+  line-height: 1.71;
+  transition: color $time $cubic;
+}
 .footer-list__email--color,
-.footer-list__tel--color{
+.footer-list__tel--color {
   color: inherit;
 }
 
@@ -54,25 +52,25 @@
 
 .footer-list__email {
   margin-bottom: 9px;
-  &:hover{
-  color:$accent-color;
-}
+  &:hover {
+    color: $accent-color;
+  }
 }
 
 .footer-list__tel:hover,
 .footer-list__tel:focus {
-  color:$accent-color;
+  color: $accent-color;
 }
 
 .footer-link__title {
   display: block;
-  
+
   margin: 0;
   margin-bottom: 20px;
   text-transform: uppercase;
   line-height: 1.14;
 
-  color:$wite-color;
+  color: $wite-color;
 }
 
 .footer-link {
@@ -95,13 +93,12 @@
   display: block;
   padding: 12px;
   border: none;
-  fill:$wite-color;
+  fill: $wite-color;
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
-  transition: background-color $time  $cubic;
+  transition: background-color $time $cubic;
 
   &:hover {
-  background-color:$accent-color;
-}
+    background-color: $accent-color;
   }
-
+}

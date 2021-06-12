@@ -1,8 +1,8 @@
-
 // Модальное окно
+
 .backdrop {
   position: fixed;
- 
+
   top: 0;
   left: 0;
 
@@ -11,7 +11,6 @@
   opacity: 1;
   transition: opacity $time $cubic;
   background-color: rgba(0, 0, 0, 0.2);
-
 }
 
 .backdrop.is-hidden {
@@ -20,7 +19,7 @@
   pointer-events: none;
 }
 
-.backdrop.is-hidden .modal  {
+.backdrop.is-hidden .modal {
   transform: translate(-50%, -50%) scale(0.6);
 }
 .modal {
@@ -32,7 +31,7 @@
   min-width: 528px;
   padding: 40px;
   border-radius: 4px;
-  background-color:$wite-color;
+  background-color: $wite-color;
   box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 1px 3px rgba(0, 0, 0, 0.12);
 
@@ -59,7 +58,6 @@
   margin-right: 8px;
 
   &:hover {
-  fill:$accent-color;
+    fill: $accent-color;
+  }
 }
-}
-
