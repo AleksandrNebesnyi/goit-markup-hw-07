@@ -132,6 +132,14 @@
   background-repeat: no-repeat;
   background-origin: border-box;
 }
+// .checkbox:checked + .icon {
+//   border-color: transparent;
+//   background-color: var(--accent-color);
+//   background-image: url("../images/svg/check-mark.svg");
+//   background-size: contain;
+//   background-repeat: no-repeat;
+//   background-origin: border-box;
+// }
 .form__button {
   @extend %%button-primery;
   color: $wite-color;
