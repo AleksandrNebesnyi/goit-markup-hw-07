@@ -4,7 +4,9 @@
 @import "./utils/mixins";
 @import "./base/normalize";
 @import "./base/common";
-@import "./components/page-header";
+@import "./components/header-logo";
+@import "./components/header";
+@import "./components/header-navigation";
 @import "./components/portfolio-buttons";
 @import "./components/portfolio-projects";
 @import "./components/footer";

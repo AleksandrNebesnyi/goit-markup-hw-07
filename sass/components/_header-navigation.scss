@@ -1,17 +1,5 @@
-/* Навигация */
 
-.header {
-  border-bottom: 1px solid var(--header-border-color);
-}
-
-.header__logo{
-  @extend %logo;
-  padding: 23px 0;
-}
-
-.logo__part--first {
-  color: $accent-color;
-}
+// Навигация хедера
 
 .main-nav,
 .nav,
@@ -77,8 +65,6 @@
   }
 
 }
-
-
 .nav-information__link {
   color: inherit;
 

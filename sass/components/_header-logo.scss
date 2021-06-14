@@ -1,0 +1,11 @@
+
+// Логотип хедера
+
+.header__logo{
+  @extend %logo;
+  padding: 23px 0;
+}
+
+.logo__part--first {
+  color: $accent-color;
+}

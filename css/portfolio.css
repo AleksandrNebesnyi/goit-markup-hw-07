@@ -1,4 +1,3 @@
-@charset "UTF-8";
 .footer-form__button {
   display: block;
   margin: 0 auto;
@@ -361,17 +360,16 @@ img {
   text-decoration: none;
 }
 
-/* Навигация */
-.header {
-  border-bottom: 1px solid var(--header-border-color);
-}
-
 .header__logo {
   padding: 23px 0;
 }
 
 .logo__part--first {
   color: #2196f3;
+}
+
+.header {
+  border-bottom: 1px solid var(--header-border-color);
 }
 
 .main-nav,
